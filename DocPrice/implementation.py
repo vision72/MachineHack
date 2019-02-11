@@ -7,31 +7,6 @@ from sklearn.preprocessing import LabelEncoder
 # from sklearn.cross_validation import train_test_split
 ## In the next Part.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 train_data = pd.read_csv('/Users/apple/Desktop/Vision/Python_Workspace/dataScience/MachineHack/DocPrice/data/Final_Train.csv')
 test_data  = pd.read_csv('/Users/apple/Desktop/Vision/Python_Workspace/dataScience/MachineHack/DocPrice/data/Final_Test.csv')
 
@@ -45,25 +20,6 @@ y_train = train_data['Fees'] # The Prediction Variable
 X_train = X_train.replace(np.NaN, 0)
 X_test = X_test.replace(np.NaN, 0)
 print(X_train.head())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # Experience 
 
