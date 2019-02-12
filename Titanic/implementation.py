@@ -11,22 +11,6 @@ df = pd.read_csv("/Users/apple/Desktop/Vision/Python_Workspace/dataScience/Machi
 sel_cols = ['PassengerId', 'Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Ticket', 'Fare', 'Cabin', 'Embarked']
 label_encoder_x = LabelEncoder()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Fill Nan values with average age
 df['Age'] = df['Age'].fillna((df['Age'].mean()))
 
@@ -52,7 +36,6 @@ predictions = gbm.predict(x_test)
 accuracy = accuracy_score(y_test, predictions)
 print("Accuracy: %.2f%%" % (accuracy * 100.0))
 confusion_matrix(y_test, predictions)
-
 
 df2 = pd.read_csv("/Users/apple/Desktop/Vision/Python_Workspace/dataScience/MachineHack/Titanic/data/titanic/train.csv")
 
